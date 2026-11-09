@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Quiz in progress | Quizly</title><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><link rel="stylesheet" href="../css/style.css"></head>
+<body class="app-page quiz-taking-page">
+  <nav class="app-nav"><div class="app-nav-inner"><a href="../index.html" class="brand"><span class="brand-mark">Q</span> quizly<span class="brand-dot">.</span></a><div class="timer-chip">◷ <span>TIME LEFT</span> <strong id="timer">00:00</strong></div></div></nav>
+  <main class="quiz-main">
+    <div class="quiz-topline"><span class="eyebrow">FOCUS MODE</span><span class="subtle-pill">Take your time, think clearly</span></div>
+    <section class="quiz-question-panel">
+      <div class="quiz-panel-accent"></div>
+      <h1 id="quizTitle" class="text-2xl font-bold mb-2">Loading Quiz...</h1>
+      <p id="questionProgress" class="text-slate-500 mb-6"></p>
+      <div id="questionContainer"></div>
+      <div class="quiz-controls">
+        <button id="previousButton" class="btn btn-secondary">← Previous</button>
+        <button id="nextButton" class="btn btn-primary">Next question →</button>
+        <button id="submitButton" class="btn btn-success hidden">Submit quiz ✓</button>
+      </div>
+      <p id="message" class="form-message text-center mt-5"></p>
+    </section>
+    <p class="quiz-footnote">✦ Your progress is saved when you submit your quiz.</p>
+  </main>
+  <script src="../js/config.js"></script><script src="../js/take-quiz.js"></script>
+</body></html>

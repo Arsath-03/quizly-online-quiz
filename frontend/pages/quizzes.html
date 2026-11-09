@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Explore quizzes | Quizly</title><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><link rel="stylesheet" href="../css/style.css"></head>
+<body class="app-page">
+  <nav class="app-nav"><div class="app-nav-inner"><a href="../index.html" class="brand"><span class="brand-mark">Q</span> quizly<span class="brand-dot">.</span></a><a href="dashboard.html" class="btn btn-quiet btn-small">← Dashboard</a></div></nav>
+  <main class="app-main">
+    <section class="page-intro"><span class="eyebrow">CHOOSE YOUR CHALLENGE</span><h1>Explore quizzes<span class="gradient-text">.</span></h1><p>Pick a topic, trust what you know and give it your best shot.</p></section>
+    <div class="content-panel"><div class="panel-heading"><div><h2>Available for you</h2><p>Choose any quiz to get started.</p></div><span class="live-pill"><i></i> Ready to play</span></div>
+      <div id="loading" class="loading-state"><span class="loader"></span> Loading quizzes...</div>
+      <div id="quizContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      <p id="message" class="text-center text-slate-500 mt-8"></p>
+    </div>
+  </main>
+  <script src="../js/config.js"></script><script src="../js/quizzes.js"></script>
+</body></html>

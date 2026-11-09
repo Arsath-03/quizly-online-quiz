@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dashboard | Quizly</title><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><link rel="stylesheet" href="../css/style.css"></head>
+<body class="app-page">
+  <nav class="app-nav"><div class="app-nav-inner"><a href="../index.html" class="brand"><span class="brand-mark">Q</span> quizly<span class="brand-dot">.</span></a><div class="nav-actions"><span class="nav-greeting">Student workspace</span><button id="logoutButton" class="btn btn-quiet btn-small">Log out ↗</button></div></div></nav>
+  <main class="app-main">
+    <section class="dashboard-hero"><div><span class="eyebrow eyebrow-light">YOUR LEARNING SPACE</span><h1>Welcome back, <span id="userName">Student</span> 👋</h1><p>Ready to turn a little practice into big progress?</p><a href="quizzes.html" class="btn btn-white mt-6">Explore quizzes <span>→</span></a></div><div class="hero-decoration"><div class="hero-ring ring-a"></div><div class="hero-ring ring-b"></div><span>✦</span></div></section>
+    <div class="section-title-row"><div><span class="eyebrow">YOUR WORKSPACE</span><h2>Make today count</h2></div><span class="subtle-pill">Keep learning · Keep growing</span></div>
+    <section class="dashboard-grid">
+      <a href="quizzes.html" class="dashboard-card"><div class="dashboard-card-icon icon-violet">▤</div><span class="card-arrow">↗</span><h3>Available quizzes</h3><p>Find your next challenge and test what you know.</p><span class="card-link">Browse quizzes →</span></a>
+      <a href="results.html" class="dashboard-card"><div class="dashboard-card-icon icon-blue">▥</div><span class="card-arrow">↗</span><h3>My results</h3><p>Review your previous attempts and track your progress.</p><span class="card-link">View results →</span></a>
+      <a href="leaderboard.html" class="dashboard-card"><div class="dashboard-card-icon icon-amber">♛</div><span class="card-arrow">↗</span><h3>Leaderboard</h3><p>See top performances and discover where you stand.</p><span class="card-link">See rankings →</span></a>
+    </section>
+    <section class="bottom-tip"><div class="tip-icon">✧</div><div><h3>A little progress adds up.</h3><p>Choose a topic, take a timed quiz and learn from every result.</p></div><a href="quizzes.html" class="btn btn-primary">Start a quiz</a></section>
+  </main>
+  <script src="../js/dashboard.js"></script>
+</body></html>

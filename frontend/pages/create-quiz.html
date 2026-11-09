@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Create a quiz | Quizly</title><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><link rel="stylesheet" href="../css/style.css"></head>
+<body class="app-page">
+  <nav class="app-nav"><div class="app-nav-inner"><a href="../index.html" class="brand"><span class="brand-mark">Q</span> quizly<span class="brand-dot">.</span><span class="admin-tag">ADMIN</span></a><a href="admin.html" class="btn btn-quiet btn-small">← Admin dashboard</a></div></nav>
+  <main class="app-main app-main-narrow">
+    <section class="page-intro"><span class="eyebrow">BUILD A NEW CHALLENGE</span><h1>Create a quiz<span class="gradient-text">.</span></h1><p>Set up the quiz details, then add questions for your students.</p></section>
+    <section class="content-panel">
+      <form id="quizForm">
+        <div class="form-section-heading"><span class="step-number">01</span><div><h2>Quiz details</h2><p>Give your quiz a clear title and category.</p></div></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div class="field-group sm:col-span-2"><label for="title">Quiz title</label><input type="text" id="title" required class="form-control" placeholder="e.g. Java Programming Basics"></div>
+          <div class="field-group sm:col-span-2"><label for="description">Description</label><textarea id="description" class="form-control" rows="3" placeholder="What will students learn in this quiz?"></textarea></div>
+          <div class="field-group"><label for="category">Category</label><input type="text" id="category" required class="form-control" placeholder="e.g. Programming"></div>
+          <div class="field-group"><label for="duration">Duration (minutes)</label><input type="number" id="duration" min="1" required class="form-control" placeholder="e.g. 10"></div>
+        </div>
+        <div class="form-section-heading questions-heading"><span class="step-number">02</span><div><h2>Quiz questions</h2><p>Add questions, options and the correct answer.</p></div><button type="button" id="addQuestionBtn" class="btn btn-secondary btn-small ml-auto">＋ Add question</button></div>
+        <div id="questionsContainer"></div>
+        <div class="form-submit-row"><p class="form-note">Review your questions before publishing.</p><button type="submit" class="btn btn-primary btn-large">Create quiz <span>→</span></button></div>
+        <p id="message" class="form-message text-center mt-4"></p>
+      </form>
+    </section>
+  </main>
+  <script src="../js/config.js"></script><script src="../js/create-quiz.js"></script>
+</body></html>

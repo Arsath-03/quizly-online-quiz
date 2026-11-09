@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Leaderboard | Quizly</title><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><link rel="stylesheet" href="../css/style.css"></head>
+<body class="app-page">
+  <nav class="app-nav"><div class="app-nav-inner"><a href="../index.html" class="brand"><span class="brand-mark">Q</span> quizly<span class="brand-dot">.</span></a><a href="dashboard.html" class="btn btn-quiet btn-small">← Dashboard</a></div></nav>
+  <main class="app-main app-main-narrow">
+    <section class="page-intro page-intro-center"><div class="leaderboard-emblem">♛</div><span class="eyebrow">CELEBRATE THE PROGRESS</span><h1>Leaderboard<span class="gradient-text">.</span></h1><p>Discover top performers and get inspired to reach your next goal.</p></section>
+    <section class="content-panel mb-6"><label for="quizSelect" class="field-label">Choose a quiz</label><div class="flex flex-col sm:flex-row gap-3"><select id="quizSelect" class="form-control flex-1"><option value="">Loading quizzes...</option></select><button id="loadButton" class="btn btn-primary">View leaderboard →</button></div></section>
+    <section class="content-panel"><div class="panel-heading"><div><h2>Top 10 students</h2><p>Rankings for the selected quiz.</p></div><span class="live-pill"><i></i> Rankings</span></div>
+      <div id="loading" class="text-slate-500 py-4">Select a quiz to view its leaderboard.</div>
+      <div class="overflow-x-auto"><table class="data-table w-full text-left"><thead><tr><th>Rank</th><th>Student</th><th>Score</th><th>Percentage</th><th>Time</th></tr></thead><tbody id="leaderboardTable"></tbody></table></div>
+      <p id="message" class="text-center mt-6 text-slate-500"></p>
+    </section>
+  </main>
+  <script src="../js/config.js"></script><script src="../js/leaderboard.js"></script>
+</body></html>

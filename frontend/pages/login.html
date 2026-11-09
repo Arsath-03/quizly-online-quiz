@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Log in | Quizly</title><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><link rel="stylesheet" href="../css/style.css"></head>
+<body class="auth-page">
+  <a href="../index.html" class="auth-brand"><span class="brand-mark">Q</span> quizly<span class="brand-dot">.</span></a>
+  <main class="auth-layout">
+    <section class="auth-aside"><div class="aside-orb orb-one"></div><div class="aside-orb orb-two"></div><span class="eyebrow eyebrow-light">WELCOME BACK</span><h1>Your next<br><span>level awaits.</span></h1><p>Pick up where you left off, sharpen your skills and keep your progress moving forward.</p><div class="aside-mini-card"><span class="mini-star">✦</span><div><strong>One question at a time</strong><small>Consistency creates progress</small></div></div></section>
+    <section class="auth-panel"><div class="auth-form-wrap"><div class="auth-heading"><span class="eyebrow">YOUR SPACE IS READY</span><h2>Welcome back</h2><p>Log in to continue your learning journey.</p></div>
+      <form id="loginForm" class="auth-form">
+        <div class="field-group"><label for="email">Email address</label><input type="email" id="email" required placeholder="you@example.com" autocomplete="email"></div>
+        <div class="field-group"><label for="password">Password</label><input type="password" id="password" required placeholder="Enter your password" autocomplete="current-password"></div>
+        <button type="submit" id="loginButton" class="btn btn-primary btn-full">Log in to Quizly <span>→</span></button>
+        <p id="message" class="form-message"></p>
+      </form>
+      <p class="auth-switch">New to Quizly? <a href="register.html">Create an account</a></p><a href="../index.html" class="back-link">← Back to home</a>
+    </div></section>
+  </main>
+  <script src="../js/config.js"></script><script src="../js/login.js"></script>
+</body></html>

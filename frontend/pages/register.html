@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Create account | Quizly</title><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><link rel="stylesheet" href="../css/style.css"></head>
+<body class="auth-page">
+  <a href="../index.html" class="auth-brand"><span class="brand-mark">Q</span> quizly<span class="brand-dot">.</span></a>
+  <main class="auth-layout">
+    <section class="auth-aside"><div class="aside-orb orb-one"></div><div class="aside-orb orb-two"></div><span class="eyebrow eyebrow-light">YOUR LEARNING JOURNEY</span><h1>Make every<br>answer <span>count.</span></h1><p>Build your knowledge one question at a time. Your next breakthrough could be one quiz away.</p><div class="aside-mini-card"><span class="mini-star">✦</span><div><strong>Progress starts here</strong><small>Learn • Practice • Improve</small></div></div></section>
+    <section class="auth-panel"><div class="auth-form-wrap"><div class="auth-heading"><span class="eyebrow">CREATE YOUR ACCOUNT</span><h2>Join Quizly</h2><p>Set up your account and start learning.</p></div>
+      <form id="registerForm" class="auth-form">
+        <div class="field-group"><label for="name">Full name</label><input type="text" id="name" required placeholder="Enter your full name" autocomplete="name"></div>
+        <div class="field-group"><label for="email">Email address</label><input type="email" id="email" required placeholder="you@example.com" autocomplete="email"></div>
+        <div class="field-group"><label for="password">Password</label><input type="password" id="password" required minlength="6" placeholder="Create a password" autocomplete="new-password"><small class="field-hint">Use at least 6 characters.</small></div>
+        <button type="submit" id="registerButton" class="btn btn-primary btn-full">Create account <span>→</span></button>
+        <p id="message" class="form-message"></p>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p><a href="../index.html" class="back-link">← Back to home</a>
+    </div></section>
+  </main>
+  <script src="../js/config.js"></script><script src="../js/register.js"></script>
+</body></html>

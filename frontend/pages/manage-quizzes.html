@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Manage quizzes | Quizly</title><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><link rel="stylesheet" href="../css/style.css"></head>
+<body class="app-page">
+  <nav class="app-nav"><div class="app-nav-inner"><a href="../index.html" class="brand"><span class="brand-mark">Q</span> quizly<span class="brand-dot">.</span><span class="admin-tag">ADMIN</span></a><a href="admin.html" class="btn btn-quiet btn-small">← Admin dashboard</a></div></nav>
+  <main class="app-main">
+    <section class="page-intro page-intro-row"><div><span class="eyebrow">YOUR QUIZ LIBRARY</span><h1>Manage quizzes<span class="gradient-text">.</span></h1><p>Review the quizzes you've created and keep your library organized.</p></div><a href="create-quiz.html" class="btn btn-primary">＋ Create quiz</a></section>
+    <section class="content-panel"><div class="panel-heading"><div><h2>My quizzes</h2><p>Your created quizzes appear here.</p></div><span class="subtle-pill">Admin library</span></div>
+      <p id="loading" class="loading-state">Loading quizzes...</p>
+      <div id="quizContainer" class="grid md:grid-cols-2 gap-5"></div>
+      <p id="message" class="text-center mt-6 text-slate-500"></p>
+    </section>
+  </main>
+  <script src="../js/config.js"></script><script src="../js/manage-quizzes.js"></script>
+</body></html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Your results | Quizly</title><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><link rel="stylesheet" href="../css/style.css"></head>
+<body class="app-page">
+  <nav class="app-nav"><div class="app-nav-inner"><a href="../index.html" class="brand"><span class="brand-mark">Q</span> quizly<span class="brand-dot">.</span></a><a href="dashboard.html" class="btn btn-quiet btn-small">← Dashboard</a></div></nav>
+  <main class="app-main app-main-narrow">
+    <section class="result-hero"><div class="result-trophy">♛</div><span class="eyebrow">NICE WORK</span><h1>Quiz completed<span class="gradient-text">!</span></h1><p>Every attempt is a step forward. Here's how you did.</p>
+      <div id="latestResult" class="hidden result-summary">
+        <h3 id="quizTitle" class="text-xl font-bold mb-6"></h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="metric-card metric-violet"><p>Your score</p><h3 id="score" class="text-3xl font-bold mt-2"></h3></div>
+          <div class="metric-card metric-green"><p>Percentage</p><h3 id="percentage" class="text-3xl font-bold mt-2"></h3></div>
+          <div class="metric-card metric-amber"><p>Time taken</p><h3 id="timeTaken" class="text-3xl font-bold mt-2"></h3></div>
+        </div>
+      </div>
+      <p id="resultMessage" class="text-slate-500 mt-6"></p>
+      <div class="flex justify-center flex-wrap gap-3 mt-7"><a href="quizzes.html" class="btn btn-primary">Try another quiz →</a><a href="leaderboard.html" class="btn btn-secondary">View leaderboard</a></div>
+    </section>
+    <section class="content-panel mt-8"><div class="panel-heading"><div><h2>Previous attempts</h2><p>Your learning journey so far.</p></div><span class="subtle-pill">History</span></div>
+      <div id="loading" class="loading-state">Loading your results...</div>
+      <div class="overflow-x-auto"><table class="data-table w-full text-left"><thead><tr class="border-b"><th>Quiz</th><th>Score</th><th>Percentage</th><th>Date</th></tr></thead><tbody id="resultsTable"></tbody></table></div>
+      <p id="historyMessage" class="text-center text-slate-500 mt-6"></p>
+    </section>
+  </main>
+  <script src="../js/config.js"></script><script src="../js/results.js"></script>
+</body></html>
