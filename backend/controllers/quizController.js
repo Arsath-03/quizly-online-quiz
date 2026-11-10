@@ -86,11 +86,12 @@ const createQuiz = async (req, res) => {
 };
 
 // GET QUIZZES CREATED BY LOGGED-IN ADMIN
+// GET ALL QUIZZES FOR ADMIN
 const getAdminQuizzes = async (req, res) => {
     try {
-        const quizzes = await Quiz.find({
-            createdBy: req.userId
-        }).sort({ createdAt: -1 });
+        const quizzes = await Quiz.find({})
+            .select("title description category duration status createdAt")
+            .sort({ createdAt: -1 });
 
         res.status(200).json({
             success: true,
@@ -101,11 +102,11 @@ const getAdminQuizzes = async (req, res) => {
     } catch (error) {
         res.status(500).json({
             success: false,
-            message: "Failed to fetch quizzes"
+            message: "Failed to fetch quizzes",
+            error: error.message
         });
     }
 };
-
 
 // GET ALL PUBLISHED QUIZZES
 const getAvailableQuizzes = async (req, res) => {

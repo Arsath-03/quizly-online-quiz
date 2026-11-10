@@ -1,15 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Admin workspace | Quizly</title><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><link rel="stylesheet" href="../css/style.css"></head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Workspace | Quizly</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
 <body class="app-page">
-  <nav class="app-nav"><div class="app-nav-inner"><a href="../index.html" class="brand"><span class="brand-mark">Q</span> quizly<span class="brand-dot">.</span><span class="admin-tag">ADMIN</span></a><button id="logoutBtn" class="btn btn-quiet btn-small">Log out ↗</button></div></nav>
-  <main class="app-main">
-    <section class="dashboard-hero admin-hero"><div><span class="eyebrow eyebrow-light">ADMIN WORKSPACE</span><h1>Welcome, <span id="adminName">Admin</span>!</h1><p>Your control center for creating and managing learning experiences.</p></div><div class="hero-decoration"><div class="hero-ring ring-a"></div><div class="hero-ring ring-b"></div><span>⚙</span></div></section>
-    <div class="section-title-row"><div><span class="eyebrow">MANAGE YOUR CONTENT</span><h2>Quiz administration</h2></div><span class="subtle-pill">Administrator access</span></div>
-    <section class="dashboard-grid admin-grid">
-      <a href="create-quiz.html" class="dashboard-card"><div class="dashboard-card-icon icon-violet">＋</div><span class="card-arrow">↗</span><h3>Create a quiz</h3><p>Build a new quiz, add questions and set its time limit.</p><span class="card-link">Create new quiz →</span></a>
-      <a href="manage-quizzes.html" class="dashboard-card"><div class="dashboard-card-icon icon-blue">▤</div><span class="card-arrow">↗</span><h3>Manage quizzes</h3><p>View your published quizzes and remove ones you no longer need.</p><span class="card-link">View my quizzes →</span></a>
-    </section>
-  </main>
-  <script src="../js/config.js"></script><script src="../js/admin.js"></script>
-</body></html>
+
+    <nav class="app-nav">
+        <div class="app-nav-inner">
+
+            <a href="../index.html" class="brand">
+                <span class="brand-mark">Q</span>
+                quizly<span class="brand-dot">.</span>
+                <span class="admin-tag">ADMIN</span>
+            </a>
+
+            <button id="logoutBtn" class="btn btn-quiet btn-small">
+                Log out ↗
+            </button>
+
+        </div>
+    </nav>
+
+    <main class="app-main">
+
+        <section class="dashboard-hero admin-hero">
+
+            <div>
+                <span class="eyebrow eyebrow-light">
+                    ADMIN WORKSPACE
+                </span>
+
+                <h1>
+                    Welcome, <span id="adminName">Admin</span>!
+                </h1>
+
+                <p>
+                    Your control center for creating and managing learning experiences.
+                </p>
+            </div>
+
+            <div class="hero-decoration">
+                <div class="hero-ring ring-a"></div>
+                <div class="hero-ring ring-b"></div>
+                <span>⚙</span>
+            </div>
+
+        </section>
+
+        <div class="section-title-row">
+            <div>
+                <span class="eyebrow">MANAGE YOUR CONTENT</span>
+                <h2>Quiz administration</h2>
+            </div>
+
+            <span class="subtle-pill">
+                Administrator access
+            </span>
+        </div>
+
+        <section class="dashboard-grid admin-grid">
+
+            <a href="create-quiz.html" class="dashboard-card">
+
+                <div class="dashboard-card-icon icon-violet">＋</div>
+
+                <span class="card-arrow">↗</span>
+
+                <h3>Create a quiz</h3>
+
+                <p>
+                    Build a new quiz, add questions and set its time limit.
+                </p>
+
+                <span class="card-link">
+                    Create new quiz →
+                </span>
+
+            </a>
+
+            <a href="manage-quizzes.html" class="dashboard-card">
+
+                <div class="dashboard-card-icon icon-blue">▤</div>
+
+                <span class="card-arrow">↗</span>
+
+                <h3>Manage quizzes</h3>
+
+                <p>
+                    View your published quizzes and remove ones you no longer need.
+                </p>
+
+                <span class="card-link">
+                    View my quizzes →
+                </span>
+
+            </a>
+
+        </section>
+
+        <!-- ADMIN LEADERBOARD SECTION -->
+
+        <section class="mt-10">
+
+            <div class="section-title-row">
+                <div>
+                    <span class="eyebrow">STUDENT PERFORMANCE</span>
+                    <h2>All Quiz Leaderboards</h2>
+                </div>
+
+                <span class="subtle-pill">
+                    Admin overview
+                </span>
+            </div>
+
+            <div class="dashboard-card mt-5">
+
+                <label for="adminQuizSelect"
+                       class="block font-semibold mb-3">
+                    Select a quiz
+                </label>
+
+                <select
+                    id="adminQuizSelect"
+                    class="w-full p-3 rounded-xl border border-gray-300 bg-white text-gray-800">
+
+                    <option value="">
+                        Loading quizzes...
+                    </option>
+
+                </select>
+
+                <div id="adminLeaderboardMessage"
+                     class="mt-5 text-gray-500 text-sm">
+                    Select a quiz to view its leaderboard.
+                </div>
+
+                <div id="adminLeaderboardContainer"
+                     class="mt-5 overflow-x-auto">
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/admin.js"></script>
+
+</body>
+</html>
